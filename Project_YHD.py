@@ -10,7 +10,7 @@ from streamlit_option_menu import option_menu
 
 st.set_page_config(layout='wide')
 selected = option_menu(menu_title=None,
-                       options=['Data Migration', 'Analytics'],
+                       options=['Data Migration', 'Queries'],
                        orientation='horizontal'
                        )
 try:
@@ -514,7 +514,7 @@ try:
         elif tbl == 'comment_table':
             show_comment_table()
 
-    elif selected == 'Analytics':
+    elif selected == 'Queries':
         st.title("Lets analyse the youtube channels data")
         st.write("\n\n\n\n\n\n")
         col1, col2 = st.columns([2, 1])
